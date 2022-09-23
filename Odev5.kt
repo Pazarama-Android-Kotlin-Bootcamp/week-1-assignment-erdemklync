@@ -50,7 +50,7 @@ private fun runTestCases(){
     checkCase(mustReturn = "false", returnValue = questionsMarks("aa6?9"))
     checkCase(mustReturn = "true", returnValue = questionsMarks("acc?7??sss?3rr1??????5"))
     checkCase(mustReturn = "false", returnValue = questionsMarks("aaaaaaarrrrr??????"))
-    checkCase(mustReturn = "true", returnValue = questionsMarks("9???1???9???1???9"))
+    checkCase(mustReturn = "true", returnValue = questionsMarks("9???1???9???1???9  "))
     checkCase(mustReturn = "false", returnValue = questionsMarks("9???1???9??1???9"))
     checkCase(mustReturn = "false", returnValue = questionsMarks("4?5?4?aaccc9"))
     checkCase(mustReturn = "false", returnValue = questionsMarks("5??aaaaabcgaaaaaaaaaa?5?5"))
