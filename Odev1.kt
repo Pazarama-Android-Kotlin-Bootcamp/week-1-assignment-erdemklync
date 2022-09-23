@@ -1,7 +1,5 @@
 private fun main(){
-    print("Input: ")
-    val inputValue = readLine()
-    print(codelandUsernameValidation(inputValue ?: ""))
+    runTestCases()
 }
 
 private fun codelandUsernameValidation(str: String): String {
@@ -15,10 +13,6 @@ private fun codelandUsernameValidation(str: String): String {
     return rules.matches(str).toString()
 }
 
-/*
-
-// To check the cases automatically
-
 private fun runTestCases(){
     checkCase(mustReturn = "false", returnValue = codelandUsernameValidation(""))
     checkCase(mustReturn = "false", returnValue = codelandUsernameValidation("abc"))
@@ -30,11 +24,9 @@ private fun runTestCases(){
     checkCase(mustReturn = "false", returnValue = codelandUsernameValidation("abcdabcdabcdabcdabcdabcdab"))
 }
 
-private fun checkCase(
+fun checkCase(
     mustReturn: String,
     returnValue: String,
 ){
     println("Must return: $mustReturn \t Returned: $returnValue")
 }
-
- */
